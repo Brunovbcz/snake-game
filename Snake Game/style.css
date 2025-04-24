@@ -1,0 +1,230 @@
+@font-face {
+    font-family: Snaker;
+    src: url('contents/fonts/gloomie_saturday/Gloomie\ Saturday.otf');
+}
+
+@font-face {
+    font-family: storyOfBela;
+    src: url('contents/fonts/story_of_bela/Story\ of\ Bela.otf');
+}
+
+body {
+    background-image: url(contents/images/mainMenu/background.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-menu h1{
+    font-family: Snaker;
+    font-size: 120px;
+    color: white;
+    text-shadow:
+     -3px 3px 0px black,
+     3px -3px 0px black,
+     -3px -3px 0px black,
+     3px 3px 0px black;
+}
+
+.main-menu a{
+    position: absolute;
+    left: calc(100% - 160px);
+    top: calc(100% - 35px);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow:
+    -1px 1px 0px black,
+    1px -1px 0px black,
+    -1px -1px 0px black,
+    1px 1px 0px black;
+}
+
+.main-buttons{
+    background-color: gray;
+    height: 75px;
+    width: 300px;
+    margin-top: 25px;
+    border: solid 3px black;
+    border-radius: 15px;
+    font-size: 35px;
+    font-family: Snaker;
+    color: white;
+    text-shadow:
+     -2px 2px 0px black,
+     2px -2px 0px black,
+     -2px -2px 0px black,
+     2px 2px 0px black;
+     transition: all .5s ease;
+}
+
+.main-buttons:hover{
+    background-color: rgb(95, 95, 95);
+    font-size: 40px;
+    box-shadow: 0px 0px 20px #bebebe;
+    cursor: pointer;
+}
+
+.bottom-btns{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    left: 0%;
+    top: calc(100% - 78px);
+}
+
+.bottom-buttons{
+    background-color: gray;
+    height: 65px;
+    width: 65px;
+    margin-left: 10px;
+    border: solid 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.bottom-buttons:hover{
+    box-shadow: 0px 0px 10px #bebebe;
+    transform: scale(1.1, 1.1);
+}
+
+#setting{
+    background-image: url(contents/images/mainMenu/setting.png);
+    background-size: cover;
+}
+
+#how-to-play{
+    background-image: url(contents/images/mainMenu/dictionary.png);
+    background-size: cover;
+}
+
+.setting-menu{
+    display: none;
+}
+
+.side-menu-setting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 650px;
+    height: 100%;
+    background-color: #015958;
+    border-right: solid 3px black;
+}
+
+.setting-button{
+    width: 300px;
+    height: 100px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    border: solid 3px black;
+    border-radius: 30px;
+    font-family: storyOfBela;
+    background-color: gray;
+    color: white;
+    text-shadow:
+     -2px 2px 0px black,
+     2px -2px 0px black,
+     -2px -2px 0px black,
+     2px 2px 0px black;
+     transition: all .5s ease;
+}
+
+.setting-button:hover{
+    box-shadow: 0px 0px 10px #bebebe;
+    transform: scale(1.1, 1.1);
+}
+
+.container-setting{
+    position: absolute;
+    background-color: #015958;
+    left: 36%;
+    width: 62%;
+    height: 90%;
+    top: 5%;
+    border: solid 3px black;
+    border-radius: 15px;
+}
+
+.how-to-play-menu{
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    background-color: #015958;
+    border: solid 3px black;
+    border-radius: 15px;
+    justify-content: center;
+    color: white;
+    font-family: storyOfBela;
+    font-size: 20px;
+    text-shadow:
+     -2px 2px 0px black,
+     2px -2px 0px black,
+     -2px -2px 0px black,
+     2px 2px 0px black;
+}
+
+.game-text{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 25px;
+    width: 90%;
+    height: 90%;
+    top: 80px;
+    left: 5%;
+}
+
+.exit-button{
+    position: absolute;
+    background-image: url(contents/images/settingMenu/exitButton.png);
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    top: 10px;
+    left: 10px;
+    transition: all .5s ease;
+}
+
+.exit-button:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+  /* Color Theme Swatches in Hex */
+.Teals-1-hex { color: #0FC2C0; }
+.Teals-2-hex { color: #0CABA8; }
+.Teals-3-hex { color: #008F8C; }
+.Teals-4-hex { color: #015958; }
+.Teals-5-hex { color: #023535; }
+
+/* Color Theme Swatches in RGBA */
+.Teals-1-rgba { color: rgba(14, 193, 191, 1); }
+.Teals-2-rgba { color: rgba(11, 170, 168, 1); }
+.Teals-3-rgba { color: rgba(0, 142, 140, 1); }
+.Teals-4-rgba { color: rgba(1, 89, 87, 1); }
+.Teals-5-rgba { color: rgba(2, 52, 52, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Teals-1-hsla { color: hsla(179, 85, 40, 1); }
+.Teals-2-hsla { color: hsla(178, 86, 35, 1); }
+.Teals-3-hsla { color: hsla(178, 100, 28, 1); }
+.Teals-4-hsla { color: hsla(179, 97, 17, 1); }
+.Teals-5-hsla { color: hsla(180, 92, 10, 1); }
