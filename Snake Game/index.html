@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="main-menu">
+        <h1>Snake<br>Game</h1>
+
+        <button class="main-buttons" id="play">Jogar</button>
+        <button class="main-buttons" id="customize">Personalizar</button>
+        <button class="main-buttons" id="leave">Sair</button>
+        
+        <div class="bottom-btns">
+            <button class="bottom-buttons" id="setting"></button>
+            <button class="bottom-buttons" id="how-to-play"></button>
+        </div>
+        <h3><a href="https://github.com/Brunovbcz">By Bruno Villas</a></h3>
+    </div>
+
+    <div class="setting-menu">
+        <div class="side-menu-setting">
+            <div class="exit-button" id="exit-setting"></div>
+            <button class="setting-button" id="grid">Grade</button>
+            <button class="setting-button" id="game-options">Opções de Jogo</button>
+            <button class="setting-button" id="sound">Som</button>
+            <button class="setting-button" id="screen">Tela</button>
+        </div>
+
+        <div class="container-setting">
+            <!-- Atualizar -->
+        </div>
+    </div>
+
+    <div class="how-to-play-menu">
+        <div class="exit-button" id="exit-htp"></div>
+        <h1>Como Jogar</h1>
+
+        <div class="game-text">
+           <li>Controles do jogo
+                <br>
+                <a>Use as teclas WASD ou ↑ ↓ ← → para movimentar a cobrinha.</a>
+                <br>
+                <a>Não é possivel mover a cobrinha na direção oposta, ou seja, se ela está indo para a direita não é possível ir diretamente para a esquerda.</a>
+           </li>
+           <br><br>
+           <li>Objetivo
+                <br>
+                <a>Comer as frutas que aparecem no mapa.</a>
+                <br>
+                <a>Evitar colidir com a borda ou com a própria cobrinha.</a>
+           </li>
+           <br><br>
+           <li>Como o jogo funciona
+                <br>
+                <a>Você começa com uma cobrinha pequena.</a>
+                <br>
+                <a>Quando ela come uma fruta, ela cresce.</a>
+                <br>
+                <a>Quanto mais ela cresce, mais difícil fica controlar e evitar colisões.</a>
+                <br>
+                <a>O jogo termina se você crescer até a cobinha preencher todo o tabuleiro, ou se a cobrinha bater em si mesma ou na parede.</a>
+           </li>
+           <br><br>
+           <li>Dicas para jogar bem
+                <br>
+                <a>Planeje seus movimentos com antecedência.</a>
+                <br>
+                <a>Tente manter a cobrinha mais no centro do mapa pra ter mais opções de fuga.</a>
+                <br>
+                <a>Quando estiver maior, evite cruzar o próprio caminho. Pense como se estivesse desenhando um labirinto.</a>
+           </li>
+           
+        </div>
+        
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/settingsHandler.js"></script>
+</body>
+</html>
